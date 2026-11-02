@@ -1,0 +1,79 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#fff7f4">
+  <meta name="description" content="Kejutan ulang tahun kecil untuk Fia, dari temanmu.">
+  <title>Kejutan kecil buat Fia ✿</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="progress" id="progress" aria-hidden="true"></div>
+  <div class="fx-layer" id="fxLayer" aria-hidden="true"></div>
+
+  <main class="page" id="birthdayPage">
+    <div class="card" id="mainCard">
+      <div class="topline"><span class="brand"><img class="brand-cat" src="images/fia-cat.png" alt="">Special for youu</span><span>from admin ♡</span></div>
+      <section class="hero">
+        <div>
+          <span class="eyebrow">happy birthday!</span>
+          <h1>Selamat ulang tahun, <em>Fiaaa!</em></h1>
+          <p class="intro">Semoga makin sukses, sehat selalu, dan semua yang lagi lu rencanakan berjalan lancar ya. Wish you all the best!</p>
+        </div>
+        <div class="art" role="img" aria-label="Kue ulang tahun dengan lilin menyala">
+          <div class="orbit" aria-hidden="true"></div>
+          <div class="cake-card">
+            <span class="cake-label">wish no. 1</span>
+            <div class="cake" aria-hidden="true"><span class="flame"></span><span class="candle"></span><span class="cake-top"></span><span class="cake-body"></span><span class="plate"></span></div>
+            <div class="photo-guard" aria-hidden="true"><img class="cake-photo" src="https://fmylzeeqiaoqpwqniyvn.supabase.co/storage/v1/object/public/fia-picture/fia-face.jpg" alt="" draggable="false"></div>
+            <p class="wish">Semoga banyak hal baik datang ke hidupmu.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="controls" aria-label="Pemutar musik">
+        <div class="player" aria-label="Pemutar musik ulang tahun">
+          <button id="musicToggle" type="button" aria-label="Putar musik" title="Jeda atau putar musik">▶</button>
+          <span class="track-name">this is song</span>
+          <span class="time" id="songTime">0:00</span>
+          <input class="seek" id="songSeek" type="range" min="0" max="100" value="0" aria-label="Posisi lagu">
+        </div>
+      </section>
+      <button class="why-link" id="whyButton" type="button" aria-controls="reasonCard" aria-expanded="false">Alasan aku bikin ini? ↗</button>
+      <p class="footer">from admin ♡</p>
+    </div>
+
+    <section class="card reason-card" id="reasonCard" aria-labelledby="reasonTitle" hidden>
+      <div class="topline"><span class="brand"><img class="brand-cat" src="images/fia-cat.png" alt="">Special for youu</span><span>from admin ♡</span></div>
+      <span class="eyebrow">jujur aja...</span>
+      <h2 id="reasonTitle" tabindex="-1">Kenapa aku bikin ini?</h2>
+      <div class="reason-copy">
+        <p>yaa jujur aku gabut jir malem malem gabisa tidur belakangan ini, jadi aku ngerjain sesuatu sama temen (AI🗿) biar ada kegiatan produktif dikit,</p>
+        <p>dan kebetulan karna kamu ulang tahun jadi ya aku buat aja ini biar yaa walau aneh sih🗿</p>
+        <p>maaf yah kalo malah ngeganggu atau bikin kamu risih, aku cuma mau ngucapin doang dengan cara yang agak beda dikit, hehehe</p>
+        <p>ya udah deh intinya mah selamat ulang tahun buat kamu😊</p>
+      </div>
+      <button class="back-link" id="backButton" type="button">← Balik ke ucapan</button>
+      <p class="footer">from admin ♡</p>
+    </section>
+  </main>
+
+  <div class="gate" id="gate">
+    <section class="popup" id="popup" role="dialog" aria-modal="true" aria-labelledby="popupText">
+      <img class="popup-mark" src="images/fia-cat.png" alt="Wajah kucing lucu">
+      <span class="popup-label" id="popupLabel">satu hal dulu...</span>
+      <h2 id="popupText">Haloooo 👋</h2>
+      <div class="dots" aria-hidden="true"><span class="dot on"></span><span class="dot"></span><span class="dot"></span></div>
+      <p class="popup-countdown" id="popupCountdown" aria-live="polite">Halaman berikutnya dalam 5 detik</p>
+      <button id="nextButton" type="button">tunggu yaa</button>
+    </section>
+  </div>
+
+  <audio id="birthdaySong" src="audio/merry-christmas-i-miss-you.mp3" preload="auto" loop></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
